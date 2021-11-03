@@ -17,6 +17,5 @@ public class Homework2Lesson2 {
 
         double q = Math.pow(i, 2) * r * dt;
         return (int) q;
-
     }
 }
