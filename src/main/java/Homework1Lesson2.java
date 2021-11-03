@@ -18,7 +18,7 @@ public class Homework1Lesson2 {
         System.out.println(rsltarithmetic);
 
     }
-        // a, b, c, d - целые числа во всех использыемых методах
+        // a, b, c, d - числа во всех используемых методах
         public static long sum(int a, int b){
             return a + b;
         }
