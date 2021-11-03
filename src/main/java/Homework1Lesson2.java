@@ -19,27 +19,27 @@ public class Homework1Lesson2 {
 
     }
         // a, b, c, d - числа во всех используемых методах
-        public static long sum(int a, int b){
-            return a + b;
-        }
+    public static long sum(int a, int b){
+        return a + b;
+    }
 
-        public static long minus(int a, int b){
-            return a - b;
-        }
+    public static long minus(int a, int b){
+        return a - b;
+    }
 
-        public static long multiplication(int a, int b){
-            int result;
-            result = a * b;
-            return result;
-        }
+    public static long multiplication(int a, int b){
+        int result;
+        result = a * b;
+        return result;
+    }
 
-        public static double division(double a, double b){
-            return a / b;
-        }
+    public static double division(double a, double b){
+        return a / b;
+    }
 
-        public static double arithmetic(double a, double b, double c, double d){
-            return (a + b) * (c - d) / (a + c - b - d);
-        }
+    public static double arithmetic(double a, double b, double c, double d){
+        return (a + b) * (c - d) / (a + c - b - d);
+    }
 }
 
 
