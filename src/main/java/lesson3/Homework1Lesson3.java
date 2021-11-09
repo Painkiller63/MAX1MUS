@@ -1,10 +1,10 @@
-package Homework1Lesson3;
+package lesson3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class lesson3 {
+public class Homework1Lesson3 {
 
     public static void main(String[] args) {
         try {
