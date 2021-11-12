@@ -3,6 +3,7 @@ package lesson3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.MessageFormat;
 
 public class Homework1Lesson3 {
 
@@ -16,6 +17,8 @@ public class Homework1Lesson3 {
             String k2 = reader.readLine();
             System.out.println("Введите значение свободного члена: ");
             String s = reader.readLine();
+
+            System.out.println(MessageFormat.format("Квадратное уравнение: {0}x^2+({1})x+({2})=0", k1, k2, s));
 
             double a = Double.parseDouble(k1);
             double b = Double.parseDouble(k2);
