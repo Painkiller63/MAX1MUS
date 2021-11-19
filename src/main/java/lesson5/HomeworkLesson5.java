@@ -15,7 +15,6 @@ public class HomeworkLesson5 {
                 scanner.next();
             }
             number = scanner.nextInt();
-            System.out.println("Вы ввели неподходящее число. Пожалуйста введите положительное число");
         } while (number <= 0);
             int m = fibonacci(number);
             System.out.println(number + "-й член последовательности Фибоначчи равен: " + m);
