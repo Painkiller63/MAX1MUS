@@ -32,7 +32,6 @@ public class HomeworkLesson5 {
             if (number == 1) {
                 return b;
             } else {
-
                 for (int i = 2; i <= number; i++) {
                     f = a + b;
                     a = b;
