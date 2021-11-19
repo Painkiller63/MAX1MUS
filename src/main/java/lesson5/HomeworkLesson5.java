@@ -26,17 +26,20 @@ public class HomeworkLesson5 {
         int b = 1;
         int f = 0;
 
-        for (int i = 0; i <= number; i++) {
-            if (i == 0) {
-                f = a;
-            } else if (i == 1) {
-                f = b;
+        if (number == 0) {
+            return a;
+        } else {
+            if (number == 1) {
+                return b;
             } else {
-                f = a + b;
-                a = b;
-                b = f;
+
+                for (int i = 2; i <= number; i++) {
+                    f = a + b;
+                    a = b;
+                    b = f;
+                }
+                return f;
             }
         }
-        return f;
     }
 }
