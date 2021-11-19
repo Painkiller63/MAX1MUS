@@ -11,7 +11,7 @@ public class HomeworkLesson5 {
         do {
             System.out.println("Введите номер члена последовательности Фибоначчи:");
             while (!scanner.hasNextInt()) {
-                System.out.println("Необходимо ввести целое число. Пожалуйста введите число: ");
+                System.out.println("Вы ввели не число. Пожалуйста введите число: ");
                 scanner.next();
             }
             number = scanner.nextInt();
