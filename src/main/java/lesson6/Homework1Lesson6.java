@@ -32,7 +32,7 @@ public class Homework1Lesson6 {
             /* Еще один вариант нахождения минимального и максимального значения - через сортировку массива
             Arrays.sort(array);
             System.out.println("Минимальное значение в массиве равно: " + array[0]);
-            System.out.println("Максимальное значение в массиве равно: " + array[n-1]); */
+            System.out.println("Максимальное значение в массиве равно: " + array[length-1]); */
     }
 
     public static double minimum(double[] array) {
