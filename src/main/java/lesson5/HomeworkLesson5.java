@@ -7,18 +7,18 @@ public class HomeworkLesson5 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner((System.in));
-        System.out.println("Введите номер члена последовательности Фибоначчи:");
-        while (!scanner.hasNextInt()) {
-            System.out.println("Необходимо ввести целое число. Пожалуйста введите число: ");
-            scanner.next();
-        }
-        int n = scanner.nextInt();
-        if (n < 0) {
-            System.out.println("Вы ввели отрицательное число. Перезагрузите программу и введите положительное число");
-        } else {
-            int m = fibonacci(n);
-            System.out.println(n + "-й член последовательности Фибоначчи равен: " + m);
-        }
+        int number;
+        do {
+            System.out.println("Введите номер члена последовательности Фибоначчи:");
+            while (!scanner.hasNextInt()) {
+                System.out.println("Необходимо ввести целое число. Пожалуйста введите число: ");
+                scanner.next();
+            }
+            number = scanner.nextInt();
+            System.out.println("Вы ввели неподходящее число. Пожалуйста введите положительное число");
+        } while (number <= 0);
+            int m = fibonacci(number);
+            System.out.println(number + "-й член последовательности Фибоначчи равен: " + m);
     }
 
     public static int fibonacci(int number) {
