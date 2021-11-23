@@ -19,14 +19,12 @@ public class Homework2Lesson6 {
         } while (number < 0);
 
         int[] defArray = new int[10];
-        for (int i = 0; i < defArray.length; i++) {
-            defArray[i] = fibonacci(i);
-        }
+        fibonacci(defArray);
 
         if (number > defArray.length - 1) {
             int[] newArray = Arrays.copyOf(defArray, number + 1);
-            for (int i = defArray.length - 1; i < newArray.length; i++) {
-                newArray[i] = fibonacci(i);
+            for (int i = defArray.length; i < newArray.length; i++) {
+                fibonacci(newArray);
             }
             System.out.println(number + "-й член последовательности Фибоначчи равен: " + newArray[number]);
         } else {
@@ -34,24 +32,14 @@ public class Homework2Lesson6 {
         }
     }
 
-    public static int fibonacci(int number) {
-        int a = 0;
-        int b = 1;
-        int f = 0;
+    public static void fibonacci(int[] array) {
 
-        if (number == 0) {
-            return a;
-        } else {
-            if (number == 1) {
-                return b;
-            } else {
-                for (int i = 2; i <= number; i++) {
-                    f = a + b;
-                    a = b;
-                    b = f;
-                }
-                return f;
-            }
+        array[0] = 0;
+        array[1] = 1;
+
+        for (int i = 2; i < array.length; i++) {
+            array[i] = array[i - 1] + array[i - 2];
         }
     }
 }
+
