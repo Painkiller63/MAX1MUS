@@ -8,7 +8,7 @@ public class ConverterLauncher {
         Scanner scanner = new Scanner((System.in));
         int index;
         do {
-            System.out.println("Введите индекс конвертера температуры: ");
+            System.out.println("Выберите конвертер температуры: ");
             System.out.println("1 - из Цельсия в Фаренгейт");
             System.out.println("2 - из Фаренгейт в Цельсий");
             System.out.println("3 - из Цельсия в Кельвин");
@@ -20,8 +20,7 @@ public class ConverterLauncher {
             index = scanner.nextInt();
         } while ((index < 1) || (index > 4));
 
-        Converters.Convertation temperature = new Converters.Convertation();
+        ConvertersRunner temperature = new ConvertersRunner();
         temperature.converter(index);
     }
-
 }
