@@ -11,6 +11,4 @@ public class Cars extends Automobile {
     protected void drive(Automobile car) {
         System.out.println("Легковой " + this + " проезжает КПП со скоростью " + speed + " км/ч.");
     }
-
-
 }

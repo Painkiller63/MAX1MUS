@@ -8,7 +8,7 @@ public abstract class Automobile {
     final double width;
     final double height;
 
-    public Automobile (String number, int speed, double weight, double length, double width, double height){
+    public Automobile(String number, int speed, double weight, double length, double width, double height) {
         this.number = number;
         this.speed = speed;
         this.weight = weight;
@@ -16,6 +16,7 @@ public abstract class Automobile {
         this.width = width;
         this.height = height;
     }
+
     abstract void drive(Automobile car);
 
     @Override
