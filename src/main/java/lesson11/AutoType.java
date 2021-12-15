@@ -12,6 +12,6 @@ public enum AutoType {
                 return TRUCKS;
             }
         }
-        throw new IllegalStateException("Unexpected value: " + auto);
+        throw new IllegalArgumentException("Неподходящий типа автомобиля " + auto);
     }
 }
