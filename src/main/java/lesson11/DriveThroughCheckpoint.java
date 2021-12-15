@@ -11,10 +11,9 @@ public class DriveThroughCheckpoint {
                 if (auto.height <= 2.5) {
                     AutoType autoType = AutoType.getAutoType(auto);
                     switch (autoType) {
-                        case CARS:
-                            auto.drive(car);
-                        case TRUCKS:
-                            auto.drive(truck);
+                        case CARS -> auto.drive(car);
+                        case TRUCKS -> auto.drive(truck);
+                        default -> throw new IllegalStateException("Unexpected value: " + autoType);
                     }
                 } else {
                     try {

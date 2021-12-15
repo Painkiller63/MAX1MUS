@@ -8,9 +8,11 @@ public enum AutoType {
         for (AutoType autoType : values()) {
             if ((auto instanceof Cars)) {
                 return CARS;
-            } if ((auto instanceof Trucks)) {
+            } else {
+                if ((auto instanceof Trucks)) {
                     return TRUCKS;
                 }
-            } throw new IllegalStateException("Unexpected value: " + auto);
+            }
+        } throw new IllegalStateException("Unexpected value: " + auto);
     }
 }
