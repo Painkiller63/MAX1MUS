@@ -1,4 +1,4 @@
-package lesson12.lesson12;
+package lesson12;
 
 import lesson12.MyArray;
 import lesson12.MyArrayDataException;
